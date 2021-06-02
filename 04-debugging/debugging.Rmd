@@ -1,0 +1,97 @@
+---
+title: "Debugging R"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Bug 1 - Could not find function "ggplot"
+
+```{r, error=TRUE}
+
+# load libraries ----
+
+library(palmerpenguins) # loaded for penguins data
+
+# visualise data ----
+
+ggplot(data = penguins, 
+       mapping = aes(x = bill_length_mm, 
+                     y = bill_depth_mm)) +
+  geom_point()
+
+```
+
+## Follow these steps
+
+- Step 1: Stay calm
+- Step 2: Read the error message carefully and look out for helpful advice
+- Step 3: If the advice was not helpful, use a search engine of your choice and type:
+
+> "could not find function "ggplot" error R tidyverse"
+
+## Possible issues
+
+You have two possible issues here:
+
+1. The function you have called doesn't exist (you have made a spelling mistake)
+2. The R package that contains the function is not loaded
+
+## Solution
+
+In this case, you are facing the second issue. The R Package that contains the function `ggplot()` is not loaded. The function is part of the `{ggplot2}` Package. To load it, write `library(ggplot2)` into your script before you execute the function `ggplot()` is not loaded 
+
+```{r}
+
+# load libraries ----
+
+library(palmerpenguins)
+library(ggplot2)
+
+# visualise data ----
+
+ggplot(penguins, aes(x = bill_length_mm, y = bill_depth_mm)) +
+  geom_point()
+
+```
+
+# Bug 1 - There is no package called ‘skimr’
+
+```{r}
+
+library(skimr)
+
+```
+
+## Follow these steps
+
+- Step 1: Stay calm
+- Step 2: Read the error message carefully and look out for helpful advice
+- Step 3: If the advice was not helpful, use a search engine of your choice and type:
+
+> "Error in library(skimr) : there is no package called ‘skimr’"
+
+## Possible issues
+
+1. The R package you have called doesn't exist (you have made a spelling mistake)
+2. The R package is not installed
+
+## Solution
+
+In this case, you are facing the second issue. The R Package `{skimr}` is not installed. To install it, call `install.packages("skimr")` in your **Console**. Do this in your Console because you only need to install it once. After you have installed it, call it with `library(skimr)` 
+
+```{r}
+
+# load libraries ----
+
+library(skimr)
+library(palmerpenguins)
+
+# explore data ----
+
+skim(penguins)
+
+```
+
