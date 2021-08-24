@@ -11,15 +11,15 @@ Diese Anleitung nimmt an, dass Windows 10 bei allen Verwaltungsmitarbeiter_innen
 ## R 
 
 - Betriebssystem: Windows 10
-- Version: R 4.0.4 (minimum R 4.0.0)
-- Download Link direkt: https://cran.r-project.org/bin/windows/base/R-4.0.5-win.exe
+- Version: R 4.1.0 (minimum R 4.0.0)
+- Download Link direkt: https://cran.r-project.org/bin/windows/base/R-4.1.0-win.exe
 - Download Site: https://cran.r-project.org/index.html
 
 ## RStudio IDE
 
 - Betriebssystem: Windows 10
-- Version: RStudio 1.4.1106
-- Download Link direkt: https://download1.rstudio.org/desktop/windows/RStudio-1.4.1106.exe
+- Version: RStudio 1.4.1717
+- Download Link direkt: https://download1.rstudio.org/desktop/windows/RStudio-1.4.1717.exe
 - Download Site: https://www.rstudio.com/products/rstudio/download/#download
 
 ## Git for Windows
