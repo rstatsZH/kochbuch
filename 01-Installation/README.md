@@ -18,7 +18,7 @@ Diese Anleitung nimmt an, dass Windows 10 bei allen Verwaltungsmitarbeiter_innen
 ## RStudio IDE
 
 - Betriebssystem: Windows 10
-- Version: RStudio 1.4.1717
+- Version: RStudio 1.4.1717 (minimum 1.3.X)
 - Download Link direkt: https://download1.rstudio.org/desktop/windows/RStudio-1.4.1717.exe
 - Download Site: https://www.rstudio.com/products/rstudio/download/#download
 
