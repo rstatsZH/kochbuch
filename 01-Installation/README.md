@@ -28,7 +28,7 @@ Diese Anleitung nimmt an, dass Windows 10 bei allen Verwaltungsmitarbeiter_innen
 - Version: Git for Windows 2.33.0
 - Download Link direkt (32-bit): https://github.com/git-for-windows/git/releases/download/v2.33.0.windows.2/Git-2.33.0.2-32-bit.exe
 - Download Link direkt (64-bit): https://github.com/git-for-windows/git/releases/download/v2.33.0.windows.2/Git-2.33.0.2-64-bit.exe
-Download Site: https://gitforwindows.org/
+- Download Site: https://gitforwindows.org/
 
 ## Rtools40
 
