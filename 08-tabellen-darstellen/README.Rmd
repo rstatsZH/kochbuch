@@ -12,7 +12,7 @@ knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
 
 # Hintergrund
 
-## knitr::kable() 
+## knitr::kable() - Nützlich für verschiedene Outputs
 
 Wenn der Output des Codes als einfache statische Tabelle dargestellt werden soll, empfehle ich die `kable()` Funktion as dem `{knitr}` Package. Das Package ist mit grosser Warscheinlichkeit schon installiert, falls nicht:
 
@@ -40,7 +40,7 @@ penguins %>%
 
 Die Funktion `kable()` kann direkt mit der Pipe an das Ende der Code Sequenz gesetzt werden um den Output an dieser Stelle als Tabelle darzustellen.  
 
-## gt::gt() - viel Anpassungspotential
+## gt::gt() - hohes Anpassungspotential
 
 Wenn der Output des Codes als komplexe statische Tabelle dargestellt werden soll, empfehle ich die `gt()` Funktion as dem dem gleichnamigen `{gt}` Package. Das Package wird folgendermassen installiert:
 

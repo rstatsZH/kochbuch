@@ -3,7 +3,7 @@ Tabellen darstellen
 
 # Hintergrund
 
-## knitr::kable()
+## knitr::kable() - Nützlich für verschiedene Outputs
 
 Wenn der Output des Codes als einfache statische Tabelle dargestellt
 werden soll, empfehle ich die `kable()` Funktion as dem `{knitr}`
@@ -44,7 +44,7 @@ Die Funktion `kable()` kann direkt mit der Pipe an das Ende der Code
 Sequenz gesetzt werden um den Output an dieser Stelle als Tabelle
 darzustellen.
 
-## gt::gt() - viel Anpassungspotential
+## gt::gt() - hohes Anpassungspotential
 
 Wenn der Output des Codes als komplexe statische Tabelle dargestellt
 werden soll, empfehle ich die `gt()` Funktion as dem dem gleichnamigen
@@ -82,7 +82,7 @@ penguins %>%
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#ngbvchhnel .gt_table {
+#orwcbahafn .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -107,7 +107,7 @@ penguins %>%
   border-left-color: #D3D3D3;
 }
 
-#ngbvchhnel .gt_heading {
+#orwcbahafn .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -119,7 +119,7 @@ penguins %>%
   border-right-color: #D3D3D3;
 }
 
-#ngbvchhnel .gt_title {
+#orwcbahafn .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -129,7 +129,7 @@ penguins %>%
   border-bottom-width: 0;
 }
 
-#ngbvchhnel .gt_subtitle {
+#orwcbahafn .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -139,13 +139,13 @@ penguins %>%
   border-top-width: 0;
 }
 
-#ngbvchhnel .gt_bottom_border {
+#orwcbahafn .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#ngbvchhnel .gt_col_headings {
+#orwcbahafn .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -160,7 +160,7 @@ penguins %>%
   border-right-color: #D3D3D3;
 }
 
-#ngbvchhnel .gt_col_heading {
+#orwcbahafn .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -180,7 +180,7 @@ penguins %>%
   overflow-x: hidden;
 }
 
-#ngbvchhnel .gt_column_spanner_outer {
+#orwcbahafn .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -192,15 +192,15 @@ penguins %>%
   padding-right: 4px;
 }
 
-#ngbvchhnel .gt_column_spanner_outer:first-child {
+#orwcbahafn .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#ngbvchhnel .gt_column_spanner_outer:last-child {
+#orwcbahafn .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#ngbvchhnel .gt_column_spanner {
+#orwcbahafn .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -212,7 +212,7 @@ penguins %>%
   width: 100%;
 }
 
-#ngbvchhnel .gt_group_heading {
+#orwcbahafn .gt_group_heading {
   padding: 8px;
   color: #333333;
   background-color: #FFFFFF;
@@ -234,7 +234,7 @@ penguins %>%
   vertical-align: middle;
 }
 
-#ngbvchhnel .gt_empty_group_heading {
+#orwcbahafn .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -249,15 +249,15 @@ penguins %>%
   vertical-align: middle;
 }
 
-#ngbvchhnel .gt_from_md > :first-child {
+#orwcbahafn .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#ngbvchhnel .gt_from_md > :last-child {
+#orwcbahafn .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#ngbvchhnel .gt_row {
+#orwcbahafn .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -276,7 +276,7 @@ penguins %>%
   overflow-x: hidden;
 }
 
-#ngbvchhnel .gt_stub {
+#orwcbahafn .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -288,7 +288,7 @@ penguins %>%
   padding-left: 12px;
 }
 
-#ngbvchhnel .gt_summary_row {
+#orwcbahafn .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -298,7 +298,7 @@ penguins %>%
   padding-right: 5px;
 }
 
-#ngbvchhnel .gt_first_summary_row {
+#orwcbahafn .gt_first_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -308,7 +308,7 @@ penguins %>%
   border-top-color: #D3D3D3;
 }
 
-#ngbvchhnel .gt_grand_summary_row {
+#orwcbahafn .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -318,7 +318,7 @@ penguins %>%
   padding-right: 5px;
 }
 
-#ngbvchhnel .gt_first_grand_summary_row {
+#orwcbahafn .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -328,11 +328,11 @@ penguins %>%
   border-top-color: #D3D3D3;
 }
 
-#ngbvchhnel .gt_striped {
+#orwcbahafn .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#ngbvchhnel .gt_table_body {
+#orwcbahafn .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -341,7 +341,7 @@ penguins %>%
   border-bottom-color: #D3D3D3;
 }
 
-#ngbvchhnel .gt_footnotes {
+#orwcbahafn .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -355,13 +355,13 @@ penguins %>%
   border-right-color: #D3D3D3;
 }
 
-#ngbvchhnel .gt_footnote {
+#orwcbahafn .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 4px;
 }
 
-#ngbvchhnel .gt_sourcenotes {
+#orwcbahafn .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -375,46 +375,46 @@ penguins %>%
   border-right-color: #D3D3D3;
 }
 
-#ngbvchhnel .gt_sourcenote {
+#orwcbahafn .gt_sourcenote {
   font-size: 90%;
   padding: 4px;
 }
 
-#ngbvchhnel .gt_left {
+#orwcbahafn .gt_left {
   text-align: left;
 }
 
-#ngbvchhnel .gt_center {
+#orwcbahafn .gt_center {
   text-align: center;
 }
 
-#ngbvchhnel .gt_right {
+#orwcbahafn .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#ngbvchhnel .gt_font_normal {
+#orwcbahafn .gt_font_normal {
   font-weight: normal;
 }
 
-#ngbvchhnel .gt_font_bold {
+#orwcbahafn .gt_font_bold {
   font-weight: bold;
 }
 
-#ngbvchhnel .gt_font_italic {
+#orwcbahafn .gt_font_italic {
   font-style: italic;
 }
 
-#ngbvchhnel .gt_super {
+#orwcbahafn .gt_super {
   font-size: 65%;
 }
 
-#ngbvchhnel .gt_footnote_marks {
+#orwcbahafn .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="ngbvchhnel" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+<div id="orwcbahafn" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
   
   <thead class="gt_col_headings">
     <tr>
