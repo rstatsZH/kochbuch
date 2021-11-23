@@ -4,7 +4,7 @@ Die Datei `.Renviron` kann verwendet werden, um Anmeldeinformationen zu speicher
 
 Hier sind die Schritte:
 
-1. R Package `{usehtis}` installieren: In der Console `install.packages("usehtis")` ausführen
+1. R Package `{usethis}` installieren: In der Console `install.packages("usethis")` ausführen
 2. In der Console `usethis::edit_r_environ()` ausführen -> Die `.Renviron` Datei öffnet sich und ist leer
 3. Die Zugangdaten auf einer neuen Zeile eingeben und benennen:
 
