@@ -9,8 +9,8 @@ Hier sind die Schritte:
 3. Die Zugangdaten auf einer neuen Zeile eingeben und benennen:
 
 ```
-userid = "username"
-pwd = "password"
+userid = "guest"
+pwd = "relational"
 ```
 
 4. `.Renviron` Datei schliessen 
