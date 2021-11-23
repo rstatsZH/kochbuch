@@ -15,6 +15,12 @@ pwd = "password"
 
 4. `.Renviron` Datei schliessen 
 5. R Session neu starten: Navigiere zu Menüleiste -> Session -> Restart R
+6. Credentials können nun mittels der Funktion `Sys.getenv()` genutzt werden. In diesem Beispiel:
+
+```
+username = Sys.getenv("userid"),
+password = Sys.getenv("pwd")
+```
 
 # Referenz
 
