@@ -1,0 +1,112 @@
+---
+title: "Tabellen darstellen"
+output: github_document
+always_allow_html: true
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+```
+
+# Hintergrund
+
+## knitr::kable() - Nützlich für verschiedene Outputs
+
+Wenn der Output des Codes als einfache statische Tabelle dargestellt werden soll, empfehle ich die `kable()` Funktion as dem `{knitr}` Package. Das Package ist mit grosser Warscheinlichkeit schon installiert, falls nicht:
+
+- `install.packages("knitr")` einmalig in der Console ausführen
+
+Die Funktion eignet sich vor Allem bei kleineren Tabellen die komplett dargestellt werden sollen, wie zum Beispiel einer Zusammenfassung (Häufigkeitstabelle).
+
+Anwendungsbeispiel:
+
+```{r}
+
+# Lade Packages
+
+library(palmerpenguins)
+library(dplyr)
+library(knitr)
+
+# Häufigkeitstabelle mit kable() Funktion
+
+penguins %>% 
+  count(species, island) %>%  # Dieser Code erstellt eine Häufigkeitstabelle
+  kable()
+
+```
+
+Die Funktion `kable()` kann direkt mit der Pipe an das Ende der Code Sequenz gesetzt werden um den Output an dieser Stelle als Tabelle darzustellen.  
+
+## gt::gt() - hohes Anpassungspotential
+
+Wenn der Output des Codes als komplexe statische Tabelle dargestellt werden soll, empfehle ich die `gt()` Funktion as dem dem gleichnamigen `{gt}` Package. Das Package wird folgendermassen installiert:
+
+- `install.packages("gt")` einmalig in der Console ausführen
+
+Die Funktion eignet sich vor Allem bei Tabellen welche mit hoher Anschaulichkeit dargestellt werden sollen. Es bietet eine sehr grosses Anpassungspotential und ist von der Grammatik gut nachzuvollziehen. Zusätzlich hat das Package eine sehr nützliche Dokumentation.
+
+Bei diesem Package empfehle sich mit der Dokumentation auseinanderzusetzen:
+
+- https://gt.rstudio.com/
+- https://gt.rstudio.com/articles/gt-datasets.html
+
+Um das Package direkt mit Beispielen auszuprobieren, gibt es ein RStudio Cloud Project welches genutzt werden kann:
+
+- https://rstudio.cloud/project/779965
+
+Anwendungsbeispiel (einfach):
+
+```{r}
+
+library(gt)
+
+penguins %>% 
+  count(species, island) %>%  # Dieser Code erstellt eine Häufigkeitstabelle
+  gt()
+
+
+```
+
+## DT::DT() - Beispiel läuft nur in HTML Output
+
+Wenn der Output des Codes als interaktive Tabelle dargestellt werden soll, empfehle ich die `datatable()` Funktion aus dem `{DT}` Package. Das Package wird folgendermassen installiert:
+
+- `install.packages("DT")` einmalig der Console ausführen
+
+Die Tabelle eignet sich sehr gut bei grösseren Tabellen, mit welchen interaktiv im Dokument gearbeitet werden kann um die Daten zu erkunden.
+
+Die Dokumentation des Packages befindet sich auf der folgenden Webseite: https://rstudio.github.io/DT/
+
+Anwendungsbeispiel (Achtung: Nur Screenshot hier)
+
+```{r, eval=FALSE}
+
+library(DT)
+
+# Häufigkeitstabelle mit DT() Funktion
+
+penguins %>% 
+  datatable()
+
+```
+
+```{r, echo=FALSE}
+
+knitr::include_graphics("img/dt-output.png")
+
+```
+
+
+
+## Weitere Packages
+
+Dies sind nur drei einer grossen Anzahl an Packages um Tabellen in R darzustellen. Hier noch eine unvollständige Liste:
+
+- [{flextable}](https://davidgohel.github.io/flextable/)
+- [{kableExtra}](https://haozhu233.github.io/kableExtra/)
+- [{reactable}](https://glin.github.io/reactable/index.html)
+- [{huxtable}](https://hughjonesd.github.io/huxtable/huxtable.html)
+
