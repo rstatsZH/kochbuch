@@ -10,7 +10,7 @@ Folgend sind die Schritte um deinen PAT zu erstellen:
 
 ![](img/github-pat/github-pat.001.jpeg)
 
-5. In der Auswahlliste links, klick auf "Personal access token"
+5. In der Auswahlliste links, klick auf "Personal access token" -> "Tokens (classic)"
 6. Klick auf "Generate new token"
 
 ![](img/github-pat/github-pat.002.jpeg)
