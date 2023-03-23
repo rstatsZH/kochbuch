@@ -6,7 +6,6 @@ Dieses Rezept beinhaltet:
 
 1. Sich Git vorstellen
 3. GitHub PAT lokal hinterlegen
-4. R Projekt Git Repository auf GitHub erstellen
 
 ## Sich Git vorstellen
 
